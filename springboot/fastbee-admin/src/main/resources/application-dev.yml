@@ -6,9 +6,9 @@ spring:
     druid:
       # 主库数据源
       master:
-        url: jdbc:mysql://localhost/fastbee?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+        url: jdbc:mysql://39.107.250.212:3306/wlw?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
         username: root
-        password: 123456
+        password: Ss13626350673
       # 从库数据源
       slave:
         enabled: false      # 从数据源开关/默认关闭
@@ -48,8 +48,8 @@ spring:
             multi-statement-allow: true
   # redis 配置
   redis:
-    host: localhost                         # 地址
-    port: 6379                              # 端口，默认为6379
+    host: 39.107.250.212                         # 地址
+    port: 6005                              # 端口，默认为6379
     database: 1                             # 数据库索引
     #password: fastbee                       # 密码
     timeout: 10s                            # 连接超时时间
@@ -61,9 +61,9 @@ spring:
         max-wait: -1ms                      # 连接池最大阻塞等待时间（使用负值表示没有限制）
   # mqtt 配置
   mqtt:
-    username: fastbee                       # 账号
-    password: fastbee                       # 密码
-    host-url: tcp://localhost:1883          # mqtt连接tcp地址
+    username: admin                       # 账号
+    password: .999999999                       # 密码
+    host-url: tcp://39.107.250.212:1883          # mqtt连接tcp地址
     client-id: ${random.int}                # 客户端Id，不能相同，采用随机数 ${random.value}
     default-topic: test                     # 默认主题
     timeout: 30                             # 超时时间
